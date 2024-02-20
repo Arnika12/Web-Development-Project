@@ -1,11 +1,11 @@
-*{  
+* {  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
+body {
     background-color: #fde9e0;
     display: flex;
     align-items: center;
@@ -13,7 +13,7 @@ body{
     height: 100vh; /* Ensure full viewport height */
 } 
 
-.container{
+.container {
     width: 100%;
     min-height: 100vh;
     padding: 10px;
@@ -21,7 +21,8 @@ body{
     background-size: cover;
     /* background-position: center; */
 }
-.todo-app{
+
+.todo-app {
     width: 500px;
     min-width: 540px;
     padding: 40px 30px 70px;
@@ -30,7 +31,8 @@ body{
     border-radius: 10%;
     box-shadow: 0 0 30px #afafaf;
 }
-.todo-app h2{
+
+.todo-app h2 {
     color: rebeccapurple;
     margin-bottom: 20px;
     display: flex;
@@ -38,26 +40,29 @@ body{
     justify-content: center;    /* to get to do list text in center */
     font-size: 30px;
 }
-.todo-app h2 img{
+
+.todo-app h2 img {
     height: 50px;
     width: 50px;
     margin-left: 10px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color:antiquewhite ;
+    background-color: antiquewhite;
     border-radius: 30px;
     padding-left: 20px;
     margin-bottom: 25px;
 }
-.row:hover{
-    outline :2px solid orangered ;
+
+.row:hover {
+    outline: 2px solid orangered;
 }
 
-.row input{
-    flex:1;  /*takes full width*/
+.row input {
+    flex: 1;  /*takes full width*/
     border: none;
     background: transparent;
     outline: none;
@@ -65,7 +70,8 @@ body{
     font-weight: 15px;
     font-size: 25px;
 }
-.row button{
+
+.row button {
     right: 0;
     border: none;
     outline: none;
@@ -77,11 +83,7 @@ body{
     cursor: pointer;
 }
 
-/* #list-container{
-
-} */
-
-ul li{
+ul li {
     list-style: none;
     font-size: 25px;
     padding: 12px 8px 12px 50px;
@@ -90,38 +92,41 @@ ul li{
     cursor: pointer;
     position: relative;
 }
-ul li:hover{
+
+ul li:hover {
     outline: 1px solid blue;
     border-radius: 20px;
 }
 
-ul li::before{
+ul li::before {
     content: '';
     position: absolute;
     height: 25px;
     width: 25px;
-    border-radius:50%;
+    border-radius: 50%;
     background-image: url(unchecked.png);
     background-size: cover;
     background-position: center;
     top: 15px;
     left: 8px;
 }
-ul li.checked{
+
+ul li.checked {
     color: #555;
     text-decoration: line-through;
     background-color: rgb(250, 250, 185);
     border-radius: 20px;
 }
-ul li.checked::before{
+
+ul li.checked::before {
     background-image: url(checked.png);
 }
 
-ul li span{
+ul li span.edit-icon {
     position: absolute;
-    right:0;
-    top : 5px;
-    width :40px;
+    right: 50px;
+    top: 5px;
+    width: 40px;
     height: 40px;
     font-size: 30px;
     color: #272626;
@@ -130,6 +135,58 @@ ul li span{
     border-radius: 50%;
 }
 
-ul li span:hover{
-    background: #b9d0fc ;
+ul li span.trash-icon {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #272626;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+ul li span.trash-icon:hover {
+    background: #b9d0fc;
+}
+
+ul li span.edit-icon {
+    position: absolute;
+    right: 90px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    color: #272626;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+#clear-all-button {
+    background-color: #ff5945;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    float: right;
+    margin-right: 20px; /* Add right margin to separate from tasks */
+    transition: background-color 0.3s, font-size 0.3s; /* Smooth transition for background color and font size */
+}
+
+#clear-all-button:hover {
+    background-color: #e03c2f;
+    outline: 2px solid rgb(17, 17, 17);
+    font-size: 22px;
+}
+
+
+ul {
+    margin-bottom: 40px; /* Add bottom margin to create space between tasks and clear all button */
 }

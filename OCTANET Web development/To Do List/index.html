@@ -10,14 +10,18 @@
     <div class="container">
         <div class="todo-app">
             <h2>TO-DO List <img src="icon.png" alt="to-do icon"></h2>
+
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add your task ">
                 <button onclick="AddTask()">Add Task</button>
             </div>
+
             <ul id="list-container">
+                <!-- List items will be added dynamically here -->
             </ul>
+            
+            <button id="clear-all-button">Clear All Tasks</button>
         </div>
-        
     </div>
     <script src="script.js"></script>
 </body>
