@@ -34,7 +34,7 @@ body{
  .navbar img{
     color: red;
     height: 60px;
-    width: 114px;
+    width: 130px;
     position: relative;   /*to get logo in front*/
     z-index: 10;         /*to get logo in front*/
 }
@@ -114,7 +114,6 @@ body{
 }
 .main input{
     padding: 10px 101px 8px 14px;
-    /* color: aliceblue; */
     font-weight: 500;
     font-size: 15px;
     border-radius: 4px;
@@ -135,13 +134,18 @@ body{
 }
 .secImg img{
     width: 40vw;
-    position: relative;     /*138 & 139 to set video inside image*/
+    position: relative;     /*line 138 & 139 to set video inside image*/
     z-index: 10;
 }
 .secImg video{
     position: absolute;
-    top: 51px;
+    top: 35px;
     right: 0;
+}
+.secImg .video2{
+    position: absolute;
+    width:350px;
+    right: 100px;
 }
 
 section.first > div{
@@ -156,8 +160,8 @@ section.first > div{
     font-size: 24px;
     font-weight: bolder;
 }
+
 .third video{
-    /* width : 90vw; */
     position: absolute;
 }
 
@@ -189,24 +193,46 @@ section.first > div{
 .faqbox span{
     font-size: 25px;
 }
+.faq .mailsend{
+    padding: 20px;
+    text-align: center;
 
-footer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.faq .mailsend span{
+    font-size: 25px;
+}
+.faq .mailsend input{
+    margin: 20px;
+    padding: 15px 90px 8px 15px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 4px;
     color: white;
+    background-color: rgba(23,23,23,0.7);
+    border: 1px solid rgba(246,238,238,0.7);
+}
+footer{
+    color:#FFFFFFB3;
     max-width: 60vw;
     margin: auto;
-    padding: 50px;
+    padding: 34px;
+}
+footer .questions{
+    padding: 30px 0; 
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: #FFFFFFB3;
+}
+.footer a{
+    /* text-decoration: none; */
+    color: #FFFFFFB3;
 }
 .footer-item{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     font-size: 14px;
-}
-.footer-question {
-    display: block;
-    color: #333; /* or any other color */
-    font-size: 16px; /* or adjust as needed */
-    margin-top: 10px; /* or adjust as needed */
+    /* padding: 20px; */
 }
