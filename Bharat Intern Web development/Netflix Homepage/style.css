@@ -189,3 +189,24 @@ section.first > div{
 .faqbox span{
     font-size: 25px;
 }
+
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    max-width: 60vw;
+    margin: auto;
+    padding: 50px;
+}
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 14px;
+}
+.footer-question {
+    display: block;
+    color: #333; /* or any other color */
+    font-size: 16px; /* or adjust as needed */
+    margin-top: 10px; /* or adjust as needed */
+}
