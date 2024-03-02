@@ -89,6 +89,16 @@ svg {
     font-size: 18px;
 }
 
+/* all red text in document */
+span a{
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+}
+span a:hover{
+    text-decoration: underline;
+}
+
 .con1{
     padding: 25px;
 }
