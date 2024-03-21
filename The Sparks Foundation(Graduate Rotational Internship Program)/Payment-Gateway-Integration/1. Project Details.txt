@@ -1,0 +1,15 @@
+ ----------   Payment Gateway Integration   ----------
+
+Create a simple website where payment gateway is integrated.
+
+There will be a simple donate button on homepage. On clicking the donate button, the user willHand on the payment page where
+user can select the amount to be paid and the payment type, e.g. credit card, Paypd etc
+
+Once the payment is done ond invoice will be qenerated and email will be sert to the User for the payment receved. The
+invoice will contain the amount
+
+On any page/ emait, oniy basic informotion is needed.
+
+Create your own temporary /sandboxtesting accounts with 3 party for integrations.
+
+Host the website at 000webhost, github.lo, heroku app or any other free hosting provider. Check in code in gitlab.
