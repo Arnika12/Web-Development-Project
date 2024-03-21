@@ -20,7 +20,7 @@
 }
 
 .logo{
-    background-image: url(amalogo.png);
+    background-image: url(image/amalogo.png);
     background-size:cover;
     height: 50px;
     width: 80%;
@@ -134,7 +134,7 @@ span{
 
 /**Hero Section**/
 .hero-section{
-    background-image:url("img1.jpg");
+    background-image:url("image/img1.jpg");
     background-size:cover ;
     height:350px;
     display: flex;
@@ -255,7 +255,7 @@ ul a{
     align-items: center;
 }
 .logo1{
-    background-image: url(amalogo.png);
+    background-image: url(image/amalogo.png);
     background-size:cover;
     height: 60px;
     width: 250px;
