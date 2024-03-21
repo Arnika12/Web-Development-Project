@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.nav1 {
+    padding: 15px;
+}
+
+.nav1 .helpcenter-logo {
+    text-decoration: none;
+    color: #f5f5f1;
+    font-size: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.nav2 {
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav2 .btn1 {
+    padding: 7px 20px;
+    margin-right: 20px;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+    border: 1px solid #FFFFFFB3;
+    border-radius: 6px;
+}
+
+.nav2 .btn2 {
+    padding: 7px 20px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(235, 3, 3);
+    border: 1px solid rgb(235, 3, 3);
+    border-radius: 6px;
+}
+
+.header2 {
+    padding: 30px 30px 10px 30px;
+    /*padding: top right bottom left; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.backtohome a,
+svg {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+/* print button style */
+.print-button {
+    padding: 10px 20px;
+    background-color: rgb(192, 191, 191);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* height: 50px;
+    width: 100px; */
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Hide the button when printing */
+@media print {
+    .print-button {
+        display: none;
+    }
+}
+
+.container {
+    padding: 20px 50px 50px 50px;
+    /*padding: top right bottom left; */
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.con1 {
+    padding: 10px;
+}
+
+h2 {
+    padding: 5px 0 0 0;
+    font-size: 20px;
+}
+
+/* footer */
+.global-page-footer {
+    padding: 0 0 48px;
+    background: #000;
+    background: linear-gradient(10deg, rgba(229, 9, 20, 0) 58%, rgb(229, 9, 20) 128%), #000;
+}
+
+.global-page-footer .select {
+    margin: 32px 0 20px 0;
+}
+
+.select.select-grey {
+    border-color: #8b8a88;
+    color: #8b8a88;
+}
+
+.select {
+    padding: 18px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 7px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.footer-links a {
+    padding: 20px;
+    color: #FFFFFFB3;
+    font-size: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.tab-title {
+    border: 1px solid #ccc;
+    padding: 3px;
+    cursor: pointer;
+    color: red;
+    margin: 10px 10px;      /*top right bottom left*/
+    text-decoration: none;
+}
+
+#dropdown-toggle::before {
+    content: "▼"; 
+    color: black; 
+    margin-right: 5px;
+}
+
+#dropdown-toggle.open::before {
+    content: "▲"; 
+}
+
+#dropdown-list {
+    display: none;
+    margin-left: 100px;
+}
+
+#dropdown-list ul li a {
+    color: red;
+    text-decoration: none;
+}
+
+#dropdown-toggle, #dropdown-list ul li a:hover {
+    text-decoration: underline;
+}
+
